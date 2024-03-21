@@ -1,5 +1,6 @@
 /* ==== google fonts link ==== */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 /* ======== globals ======== */
 * {
@@ -72,7 +73,7 @@ body {
 
 .navigation ul li a {
   position: relative;
-  display: block;
+  display: flex;
   width: 100%;
   text-decoration: none;
   color: var(--white-color);
@@ -85,21 +86,19 @@ body {
 
 .navigation ul li a .icon {
   position: relative;
-  /* display: block; */
+  display: block;
   min-width: 60px;
   height: 60px;
   line-height: 75px;
   text-align: center;
-  margin-left: 10px;
 }
-
 .navigation ul li a .icon ion-icon {
-  font-size: 1.75em;
+  font-size: 1.75rem;
 }
 
 .navigation ul li a .title {
   position: relative;
-  /* display: block; */
+  display: block;
   padding: 0 10px;
   height: 60px;
   line-height: 60px;
