@@ -46,6 +46,10 @@ body {
   overflow: hidden;
 }
 
+.navigation.active {
+  width: 80px;
+}
+
 .navigation ul {
   position: absolute;
   top: 0;
@@ -71,6 +75,10 @@ body {
   pointer-events: none;
 }
 
+.navigation ul li:last-child {
+  margin-top: 200px;
+}
+
 .navigation ul li a {
   position: relative;
   display: flex;
@@ -94,6 +102,16 @@ body {
 }
 .navigation ul li a .icon ion-icon {
   font-size: 1.75rem;
+}
+
+.navigation ul li a .collapse,
+.navigation ul li a .expand.active {
+  display: inline;
+}
+
+.navigation ul li a .collapse.active,
+.navigation ul li a .expand {
+  display: none;
 }
 
 .navigation ul li a .title {
